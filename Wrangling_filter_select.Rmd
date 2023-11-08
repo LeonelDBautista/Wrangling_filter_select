@@ -278,9 +278,13 @@ movies_comedies_animation_100 %>%
 5. Is your favorite movie in the dataset? What other questions could you ask or answer using `filter()`, `select()`, and `arrange()`?
 
 ```{r}
-
+movies %>%
+  filter(str_detect(title, "Wolf of Wall Street"))
 ```
 
+My favorite movie 'Wolf of Wall Street' is not included in this data set, potentially because it's a controversial film.    
+
+You could answer questions like what is the highest budget film in each genre, or what is the film with the largest number of votes on IMDB with a rating below 3.0.   
 
 
 
