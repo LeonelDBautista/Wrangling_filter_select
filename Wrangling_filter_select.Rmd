@@ -191,6 +191,10 @@ movies_2000 %>%
   arrange(rating, desc(budget))  # these are the lowest rated movies arranged by largest budget
 
 # Using the original 'movies' data, what is the longest movie? What is the oldest movie?
+movies %>%
+  arrange(desc(length))
+movies %>%
+  arrange(year)
 ```
 
 
