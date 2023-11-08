@@ -266,8 +266,14 @@ Harry Potter and the Sorcerer's Stone
 4. What is the highest budget for a movie that is an Animation or Comedy with at least 100 votes?   
 
 ```{r}
+movies_comedies_animation_100 <- movies %>%
+    filter(Comedy == 1 | Animation == 1 & votes >= 100)
 
+movies_comedies_animation_100 %>%
+  arrange(desc(budget))
 ```
+
+'Wild Wild West' is the highest budget comedy or animation movie with at least 100 votes on imdb, it is a comedy.    
 
 5. Is your favorite movie in the dataset? What other questions could you ask or answer using `filter()`, `select()`, and `arrange()`?
 
